@@ -11,10 +11,9 @@ AccountProof:
     - storageProof
   properties:
     address:
-      title: address
       $ref: '#/components/schemas/address'
     accountProof:
-      title: accountProof
+      title: Account proofs
       type: array
       items:
         $ref: '#/components/schemas/bytes'
@@ -25,8 +24,7 @@ AccountProof:
       title: codeHash
       $ref: '#/components/schemas/hash32'
     nonce:
-      title: nonce
-      $ref: '#/components/schemas/uint64'
+      $ref: '#/components/schemas/Nonce'
     storageHash:
       title: storageHash
       $ref: '#/components/schemas/hash32'
